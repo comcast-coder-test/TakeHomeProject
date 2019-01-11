@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pokemon Sample</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="speed">Speed</string>
+    <string name="defense">Defense</string>
+    <string name="attack">Attack</string>
+</resources>

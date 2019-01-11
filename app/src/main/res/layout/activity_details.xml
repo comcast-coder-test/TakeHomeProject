@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable name="data" type="com.noahseidman.comcast.PokemonViewModel"/>
+    </data>
+
+    <LinearLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+        <ImageView
+                android:transitionName="pokemon_image"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" app:image="@{data.image}"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@{data.speed}"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@{data.defense}"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@{data.attack}"/>
+
+        <android.support.v7.widget.RecyclerView android:id="@+id/abilities_recycler" android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</layout>

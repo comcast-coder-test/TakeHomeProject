@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="data" type="com.noahseidman.comcast.models.AbilityDetails"/>
+        <variable name="callback" type="com.noahseidman.comcast.interfaces.AbilityCallback"/>
+    </data>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@{data.name}"
+              android:onClick="@{() -> callback.onAbilityClick(data)}"/>
+
+</layout>
