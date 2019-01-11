@@ -39,8 +39,6 @@ class MainActivity : AppCompatActivity() {
 
     private val pokemonCallback: PokemonCallback = PokemonCallback { view, pokemonViewModel ->
         val pokemonImage = view.findViewById<ImageView>(R.id.image)
-        startActivity(intent)
-
         val intent = Intent(this, DetailsActivity::class.java)
         intent.putExtra(PokemonViewModel.SERIALIZABLE, pokemonViewModel)
         val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, pokemonImage as View, "pokemon_image")

@@ -106,6 +106,7 @@ public class PokemonViewModel extends BaseObservable implements LayoutBinding, D
 
     @Override
     public void bind(DataBoundViewHolder holder) {
+        holder.binding.executePendingBindings();
         if (!TextUtils.isEmpty(imageUrl)) {
             return;
         }
