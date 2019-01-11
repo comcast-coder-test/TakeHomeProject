@@ -70,7 +70,6 @@ class MainActivity : AppCompatActivity() {
                     for (pokemon in pokemons.body()?.results!!) {
                         adapter.addItem(PokemonViewModel(pokemon))
                     }
-
                 }
 
                 override fun onError(e: Throwable) {
@@ -92,7 +91,6 @@ class MainActivity : AppCompatActivity() {
                     for (pokemon in pokemons.body()?.results!!) {
                         adapter.addItem(PokemonViewModel(pokemon))
                     }
-
                 }
 
                 override fun onError(e: Throwable) {
